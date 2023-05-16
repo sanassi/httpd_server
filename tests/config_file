@@ -1,0 +1,11 @@
+[global]
+log_file = server.log
+log = true
+pid_file = /tmp/HTTPd.pid
+
+[[vhosts]]
+server_name = images
+port = 8990
+ip = 127.0.0.1
+default_file = file.txt
+root_dir = dir
